@@ -1,5 +1,6 @@
 package Lecture.Recursive_Tree_Graph_DFS_BFS_basic;
 
+//이진트리순회(DFS)
 class Node {
     int data;
     Node lt, rt;

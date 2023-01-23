@@ -89,7 +89,7 @@ public class Ex2573 {
             visited = new int[n][m];
             numIceArea=numIceArea2;
             int chOne=0;
-            for(int i=1; i<n-1; i++) {
+            for(int i=1; i<n-1; i++) { //2차원 배열 깊은 복사 시 clone말고 for문으로
                 for(int j=1; j<m-1; j++) {
                     ice[i][j]=ice2[i][j];
                     if(ice[i][j]==0) {

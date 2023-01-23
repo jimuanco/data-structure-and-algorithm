@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-//최대점수 구하기(DFS)
+//최대점수 구하기(DFS) -> N이 20까지라 DFS로 풀 수 있음(DP Ex06 참조)
 public class Ex03 {
     static int n,m, answer=0;
     static int[][] arr;

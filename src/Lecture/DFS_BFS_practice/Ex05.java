@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.StringTokenizer;
 
-//동전교환
+//동전교환 -> 동전 종류 개수 12개까지라 DFS로 풀 수 있음(DP Ex05 참조)
 public class Ex05 {
 
     static int sum, n, m;
@@ -36,7 +36,7 @@ public class Ex05 {
         for(int i=0; i<n; i++) {
             arr[i]=Integer.parseInt(st.nextToken());
         }
-        Arrays.sort(arr, Collections.reverseOrder()); //이거 안해주면 Time Limit Exceeded <- int 말고 객체형 Integer 사용
+        Arrays.sort(arr, Collections.reverseOrder()); //이거 안해주면 Time Limit Exceeded, int 말고 객체형 Integer 사용
         m = Integer.parseInt(br.readLine());
         DFS(0);
         System.out.println(answer);

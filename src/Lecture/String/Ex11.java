@@ -2,6 +2,7 @@ package Lecture.String;
 
 import java.util.Scanner;
 
+//문자열 압축
 class Ex11 {
     public String solution(String s) {
         String answer = String.valueOf(s.charAt(0));

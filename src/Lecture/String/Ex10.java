@@ -2,6 +2,7 @@ package Lecture.String;
 
 import java.util.Scanner;
 
+//가장 짧은 문자거리
 public class Ex10 {
     public int[] solution(String s, char t) {
         int[] answer = new int[s.length()];

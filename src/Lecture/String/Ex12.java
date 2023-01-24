@@ -2,6 +2,7 @@ package Lecture.String;
 
 import java.util.Scanner;
 
+//암호
 public class Ex12 {
     public String solution(String s, int n) {
         String tmp ="";
@@ -11,7 +12,7 @@ public class Ex12 {
             tmp += s.charAt(j);
             if((j+1) % 7 == 0) {
                 tmp2 = tmp.replace("#","1").replace("*","0");
-                int x = Integer.parseInt(tmp2,2);
+                int x = Integer.parseInt(tmp2,2); //2진수 -> 10진수
                 char c = (char)x;
                 tmp ="";
                 answer += c;

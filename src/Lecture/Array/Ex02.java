@@ -2,6 +2,7 @@ package Lecture.Array;
 
 import java.util.Scanner;
 
+//보이는 학생
 public class Ex02 {
     public int solution(int n, int[] arr) {
         int answer = 1;

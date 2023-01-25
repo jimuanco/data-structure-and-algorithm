@@ -2,6 +2,7 @@ package Lecture.Array;
 
 import java.util.Scanner;
 
+//소수(에라토스테네스 체)
 public class Ex05_a {
 
     public int solution(int n) {

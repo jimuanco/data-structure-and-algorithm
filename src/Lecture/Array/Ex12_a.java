@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+//멘토링
 //멘토, 멘티 짝이 될 수 있는 경우의 수 n * n
 public class Ex12_a {
 
@@ -21,7 +22,10 @@ public class Ex12_a {
                     }
                     if(pi<pj) cnt++;
                 }
-                if(cnt==m) answer++;
+                if(cnt==m) {
+                    answer++;
+//                    System.out.println("("+i+", "+j+")");
+                }
             }
         }
         return answer;

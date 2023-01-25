@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+//격자판 최대합
 //풀이는 for문을 따로 두번 씀
 public class Ex09 {
 

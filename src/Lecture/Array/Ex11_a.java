@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+//임시반장 정하기
 public class Ex11_a {
 
     public int solution(int n, int[][] arr) {
@@ -15,7 +16,7 @@ public class Ex11_a {
                 for(int k=1; k<=5; k++) {
                     if(arr[i][k] == arr[j][k]) {
                         cnt++;
-                        break;
+                        break; //다른 학생과 반이 한번이라도 같으면 빠져나가기
                     }
                 }
             }

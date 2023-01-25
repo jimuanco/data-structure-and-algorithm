@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+//봉우리
 public class Ex10 {
 
     public int solution(int n, int[][] arr) {

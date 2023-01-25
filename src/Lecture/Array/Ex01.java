@@ -3,6 +3,7 @@ package Lecture.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+//큰 수 출력하기
 public class Ex01 {
     public ArrayList<String> solution(int n, String[] s) {
         ArrayList<String> answer = new ArrayList<>();

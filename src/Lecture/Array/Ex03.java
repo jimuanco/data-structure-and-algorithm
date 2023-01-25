@@ -3,6 +3,7 @@ package Lecture.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+//가위 바위 보
 public class Ex03 {
 
     public ArrayList<String> solution(int n, int[] arr1, int[] arr2) {

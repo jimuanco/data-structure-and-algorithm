@@ -3,6 +3,7 @@ package Lecture.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+//피보나치 수열
 public class Ex04 {
 
     public ArrayList<String> solution(int n) {

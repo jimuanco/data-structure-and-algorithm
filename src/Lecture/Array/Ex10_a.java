@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+//봉우리
 public class Ex10_a {
     int[] dx = {-1,0,1,0};
     int[] dy = {0,1,0,-1};

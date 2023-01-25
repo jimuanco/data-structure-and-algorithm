@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+//등수구하기
 public class Ex08 {
     public int[] solution(int n, int[] arr) {
         int[] answer = new int[n];

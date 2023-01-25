@@ -3,6 +3,7 @@ package Lecture.Array;
 import java.util.Scanner;
 import java.util.ArrayList;
 
+//뒤집은 소수
 public class Ex06 {
 
     public ArrayList<Integer> solution(int n, int[] arr) {

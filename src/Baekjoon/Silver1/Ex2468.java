@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
+import java.util.TreeSet;
 
 //안전 영역
 public class Ex2468 {
@@ -30,19 +31,37 @@ public class Ex2468 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         n = Integer.parseInt(br.readLine());
         board=new int[n][n];
-        ArrayList<Integer> arrH = new ArrayList<>();
-        arrH.add(0); //이거 안넣어주면 틀림 (아무 지역도 물에 잠기지 않을 수도 있다.)
+//        ArrayList<Integer> arrH = new ArrayList<>();
+        TreeSet<Integer> set = new TreeSet<>();
+//        arrH.add(0); //이거 안넣어주면 틀림 (아무 지역도 물에 잠기지 않을 수도 있다.)
+        set.add(0); //이거 안넣어주면 틀림 (아무 지역도 물에 잠기지 않을 수도 있다.)
         StringTokenizer st;
         for(int i=0; i<n; i++) {
             st = new StringTokenizer(br.readLine());
             for(int j=0; j<n; j++) {
                 int a =Integer.parseInt(st.nextToken());
-                if(!arrH.contains(a)) arrH.add(a);
+//                if(!arrH.contains(a)) arrH.add(a);
+                set.add(a);
                 board[i][j]=a;
             }
         }
-        for(int i=0; i<arrH.size(); i++) {
-            H = arrH.get(i);
+//        for(int i=0; i<arrH.size(); i++) {
+//            H = arrH.get(i);
+//            dis=new int[n][n];
+//            for(int j=0; j<n; j++) {
+//                for(int k=0; k<n; k++) {
+//                    if(H<board[j][k] && dis[j][k]==0) {
+//                        dis[j][k]=1;
+//                        DFS(j,k);
+//                        z++;
+//                    }
+//                }
+//            }
+//            answer=Math.max(answer,z);
+//            z=0;
+//        }
+        for(int x : set) {
+            H = x;
             dis=new int[n][n];
             for(int j=0; j<n; j++) {
                 for(int k=0; k<n; k++) {

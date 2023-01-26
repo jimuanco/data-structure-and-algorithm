@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+//연속 부분수열
 //풀이는 for문으로 풀었음 함 봐바
 public class Ex04 {
 

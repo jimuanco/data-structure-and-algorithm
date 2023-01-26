@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-//1000 x 1000으로 시간 초과 다른 알고리즘 적용해야함
+//1000 x 1000 + 재귀함수로 시간 초과 다른 알고리즘 적용해야함
 //벽 부수고 이동하기 4
 public class Ex16946_timeLimitExceeded {
     static int[] dx={-1,0,1,0};

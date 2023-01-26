@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
+//두 배열 합치기
 public class Ex01_a {
 
     public ArrayList<Integer> solution(int n, int[] arr1, int m, int[] arr2) {

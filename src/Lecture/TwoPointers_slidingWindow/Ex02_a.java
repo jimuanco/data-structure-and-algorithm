@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
+//공통원소 구하기
 public class Ex02_a {
 
     public ArrayList<Integer> solution(int n, int[] a, int m, int[] b) {

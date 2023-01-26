@@ -67,7 +67,8 @@ public class Ex2583 {
         }
         Collections.sort(arr);
         StringBuilder sb= new StringBuilder();
-        System.out.println(cnt);
+//        System.out.println(cnt);
+        sb.append(cnt+"\n"); // '\n' 이 아니라 "\n"
         for(int x : arr) {
             sb.append(x+" ");
         }

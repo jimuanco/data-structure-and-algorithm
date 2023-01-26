@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.StringTokenizer;
 import java.util.TreeSet;
 
-//단순하게 풀면 1000 x 1000 으로 시간 초과
+//단순하게 풀면 1000 x 1000 + 재귀함수로 시간 초과
 //벽 부수고 이동하기 4
 public class Ex16946 {
     static int[] dx={-1,0,1,0};

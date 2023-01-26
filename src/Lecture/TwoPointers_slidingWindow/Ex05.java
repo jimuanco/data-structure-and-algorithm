@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+//연속된 자연수의 합
 //풀이는 for문으로 풀었음 함 봐바
 //수학적으로 풀 수도 있음
 public class Ex05 {

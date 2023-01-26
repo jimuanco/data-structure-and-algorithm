@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+//최대 매출
 public class Ex03 {
 
     public int solution(int n, int m, int[] a) {

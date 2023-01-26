@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+//최대 길이 연속부분수열
 public class Ex06_a {
     public int solution(int n, int k, int[] arr) {
         int answer = 0, cnt=0, lt=0;

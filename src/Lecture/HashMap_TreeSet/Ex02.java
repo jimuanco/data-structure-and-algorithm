@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 
+//아나그램(해쉬)
 //길이가 같다는 조건 고려 안함..이렇게 풀지말고 풀이대로 풀어
 public class Ex02 {
     public String solution(String s1, String s2) {

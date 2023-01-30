@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
+//올바른 괄호
 public class Ex01_a {
     public String solution(String str) {
         String answer = "YES";

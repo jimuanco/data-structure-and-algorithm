@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 
+//모든 아나그램 찾기(Hash, sliding window : 시간복잡도 O(n))
 public class Ex04_a {
     public int solution(String a, String b) {
         int answer = 0, lt=0;
@@ -17,7 +18,7 @@ public class Ex04_a {
         }
         for(int rt=L; rt<a.length(); rt++) {
             am.put(a.charAt(rt), am.getOrDefault(a.charAt(rt), 0)+1);
-            if(am.equals(bm)) answer++;
+            if(am.equals(bm)) answer++; //HashMap 비교(key, Value 모두 비교함)
             am.put(a.charAt(lt), am.get(a.charAt(lt))-1);
             if(am.get(a.charAt(lt))==0) am.remove(a.charAt(lt));
             lt++;

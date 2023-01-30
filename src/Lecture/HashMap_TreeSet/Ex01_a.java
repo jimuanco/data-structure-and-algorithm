@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 
+//학급 회장(해쉬)
 public class Ex01_a {
     public char solution(int n, String str) {
         char answer = ' ';
@@ -12,8 +13,12 @@ public class Ex01_a {
         for(char x : str.toCharArray()) {
             map.put(x, map.getOrDefault(x,0)+1);
         }
+//        System.out.println(map.containsKey('F'));
+//        System.out.println(map.size());
+//        System.out.println(map.remove('C'));
         int max = Integer.MIN_VALUE;
         for(char key : map.keySet()) {
+//            System.out.println(key+" "+map.get(key));
             if(max<map.get(key)) {
                 max=map.get(key);
                 answer=key;

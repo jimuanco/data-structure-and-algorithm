@@ -7,6 +7,7 @@ import java.util.Collections;
 import java.util.StringTokenizer;
 import java.util.TreeSet;
 
+//K번째 큰 수
 public class Ex05_a {
     public int solution(int n, int k, int[] arr) {
         int answer=-1;
@@ -19,6 +20,10 @@ public class Ex05_a {
             }
         }
         int cnt=0;
+//        Tset.remove(143);
+//        System.out.println(Tset.size());
+//        System.out.println("first : "+Tset.first());
+//        System.out.println("last : "+Tset.last());
         for(int x : Tset) {
             cnt++;
             if(cnt==k) return x;

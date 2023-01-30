@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
+//매출액의 종류(Hash, sliding window)
 public class Ex03 {
     public ArrayList<Integer> solution(int n, int k, int[] arr) {
         ArrayList<Integer> answer = new ArrayList<>();

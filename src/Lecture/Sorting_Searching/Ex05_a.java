@@ -6,7 +6,8 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-//HashMap으로 풀면 n, 정렬로 풀면 nlogn
+//중복 확인
+//HashMap으로 풀면 n, 정렬로 풀면 nlogn(HashMap보다 성능이 떨어짐)
 public class Ex05_a {
     public String solution(int n, int[] arr) {
         String answer="U";

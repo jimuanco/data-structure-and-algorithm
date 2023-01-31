@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
+//쇠막대기
 public class Ex05_a {
     public int solution(String str) {
         int answer=0;

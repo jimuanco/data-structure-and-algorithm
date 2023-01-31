@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+//Least Recently Used
 public class Ex04_a {
     public int[] solution(int size, int n, int[] arr) {
         int[] cache = new int[size];

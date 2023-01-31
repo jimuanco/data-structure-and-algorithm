@@ -6,11 +6,12 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
+//마구간 정하기(결정알고리즘)
 public class Ex10_a {
     public int count(int[] arr, int dist) {
         int cnt=1;
         int ep=arr[0];
-        for(int i=1; i<arr.length; i++) {
+        for(int i=1; i<arr.length; i++) { //배열은 변수니 .length
             if(arr[i]-ep>=dist) {
                 cnt++;
                 ep=arr[i];
@@ -23,7 +24,7 @@ public class Ex10_a {
         int answer=0;
         Arrays.sort(arr);
         int lt= 1;
-        int rt= arr[n-1];
+        int rt= arr[n-1]; //굳이 최대값-최소값 안해도 돼
         while(lt<=rt) {
             int mid=(lt+rt)/2;
             if(count(arr, mid)>=c) {

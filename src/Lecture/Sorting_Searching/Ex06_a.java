@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
+//장난꾸러기
 //깊은 복사!
 public class Ex06_a {
     public ArrayList<Integer> solution(int n, int[] arr) {

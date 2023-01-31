@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.StringTokenizer;
 
+//좌표 정렬(compareTo)
 class Point implements Comparable<Point> {
     public int x, y;
     Point(int x, int y) {

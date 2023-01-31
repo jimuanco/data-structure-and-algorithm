@@ -6,11 +6,14 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
+//뮤직비디오(결정알고리즘)
+//내가 원하는 답이 무조건 lt와 rt사이에 있다!
+//mid는 답으로 가능하냐?(최적은 아니더라도) -> 더 좋은 답으로 향해 간다
 public class Ex09_a {
     public int count(int[] arr, int capacity) {
         int cnt=1, sum=0;
         for(int x : arr) {
-            if(sum+x>capacity) {
+            if(sum+x>capacity) { //sum+x가 mid 넘는지 먼저 확인
                 cnt++;
                 sum=x;
             } else sum+=x;

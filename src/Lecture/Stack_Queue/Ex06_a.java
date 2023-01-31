@@ -7,6 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
+//공주 구하기
 public class Ex06_a {
     public int solution(int n, int k) {
         int answer=0;

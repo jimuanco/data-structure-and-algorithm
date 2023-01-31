@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+//중복 확인
 public class Ex05 {
     public Character solution(int n, int[] arr) {
         char answer='U';

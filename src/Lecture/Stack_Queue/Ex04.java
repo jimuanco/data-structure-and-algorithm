@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
+//후위식 연산(postfix)
 public class Ex04 {
     public int solution(String str) {
         int answer=0;

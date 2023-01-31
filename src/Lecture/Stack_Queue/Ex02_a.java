@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
+//괄호문자제거
 public class Ex02_a {
     public String solution(String str) {
         String answer="";
@@ -14,6 +15,7 @@ public class Ex02_a {
                 while(stack.pop()!='(');
             } else stack.push(x);
         }
+        //for(char x : stack)
         for(int i=0; i<stack.size(); i++) answer+=stack.get(i);
         return answer;
     }

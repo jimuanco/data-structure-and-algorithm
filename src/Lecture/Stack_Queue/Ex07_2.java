@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
 
+//교육과정설계
 public class Ex07_2 {
     public String solution(String need, String plan) {
         String answer="YES";

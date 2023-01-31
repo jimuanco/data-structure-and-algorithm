@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
+//장난꾸러기
 public class Ex06 {
     public ArrayList<Integer> solution(int n, int[] arr) {
         ArrayList<Integer> answer = new ArrayList<>();

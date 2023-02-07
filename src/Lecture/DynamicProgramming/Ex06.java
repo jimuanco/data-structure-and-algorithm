@@ -8,6 +8,7 @@ import java.util.StringTokenizer;
 //최대점수 구하기(냅색 알고리즘, 가방 문제) -> N이 50까지라 DFS로 풀 수 없음 (DFS_BFS_practice Ex03 참조)
 //dy[j] -> j분동안 얻을 수 있는 최대점수
 //종류가 무한개면 j가 앞에서 부터 증가, 유한개면 j가 뒤에서 부터 감소
+//Baekjoon Ex12865와 같은 유형
 public class Ex06 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

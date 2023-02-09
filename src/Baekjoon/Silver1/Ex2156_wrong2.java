@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 
 //포도주 시식
 //Ex2579(계단 오르기) 처럼 풀었더니 틀림..
+//wrong1과 마찬가지로 꼭 한칸씩만 띄울 필요가 없음
 //반례
 //10
 //0

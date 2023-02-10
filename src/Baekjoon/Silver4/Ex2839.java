@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 
 //설탕 배달
+//Lecture DP Ex05(동전교환)과 비슷한 유형
 public class Ex2839 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 //평범한 배낭
-//Lecture DP Ex06(냅색알고리즘) 과 같은 유형
+//Lecture DP Ex06(최대점수 구하기(냅색 알고리즘, 가방 문제)) 와 같은 유형
 public class Ex12865 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

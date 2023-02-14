@@ -8,6 +8,7 @@ import java.util.Collections;
 import java.util.StringTokenizer;
 
 //결혼식
+//Baekjoon Ex11000(강의실 배정)과 같은 유형
 class Time2 implements Comparable<Time2> {
     public int time;
     public char state;

@@ -8,6 +8,7 @@ import java.util.Collections;
 import java.util.StringTokenizer;
 
 //동전교환 -> 동전 종류 개수 12개까지라 DFS로 풀 수 있음(DP Ex05 참조)
+//Baekjoon Ex16953(A → B)과 비슷한 유형
 public class Ex05 {
 
     static int sum, n, m;

@@ -22,6 +22,7 @@ class Lecture implements Comparable<Lecture> {
 }
 
 //최대수입스케쥴(PriorityQueue)
+//Baekjoon Ex1202(보석 도둑)과 비슷한 유형
 public class Ex04 {
     static int max=Integer.MIN_VALUE;
     public static void main(String[] args) throws IOException {

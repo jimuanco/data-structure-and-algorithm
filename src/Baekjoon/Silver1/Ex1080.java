@@ -47,7 +47,8 @@ public class Ex1080 {
                 if(arr1[i][j]!=arr2[i][j]) {
                     System.out.println(-1);
                     //System.exit(0)는 매우 정상적인 종료 방법. 처리할 것만 다 처리했다면 사용해도 됨. 이 함수가 호출되면 내부적으로 정리할 것들도 다 정리한 후 종료하기 때문에 강제 종료도 아니고, main 메서드가 끝나는 것과 마찬가지.
-                    System.exit(0);
+//                    System.exit(0);
+                    return;
                 }
             }
         }

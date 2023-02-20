@@ -10,6 +10,7 @@ import java.util.StringTokenizer;
 
 //Stack이용
 //현재 스택에 들어있는 값이 들어올 수 보다 크거나 같으면 그냥 push하고 작으면 pop을 하는 방식
+//Programmers.HighScoreKit.Greedy.Ex03(큰 수 만들기)와 똑같은 문제
 public class Ex2812_a {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -25,7 +26,7 @@ public class Ex2812_a {
         Stack<Integer> stack = new Stack<>();
         int cnt=k;
         for(int i=0; i<n; i++) {
-//            if(n-i==cnt) break; (밑에 밑에 while문 대신 이거 쓰면 반례생김)
+//            if(n-i==cnt) break; //밑에 밑에 while문 대신 이거 쓰면 반례생김
             if(stack.isEmpty()) stack.push(arr[i]); //비어 있을땐 push
             else {
                 if(stack.peek()<arr[i]) { //들어올 값보다 작으면 k개 지울때까지 또는 stack이 비어있을때까지 또는 들어올 값보다 크거나 같을때까지 pop() 후 push()

@@ -1,11 +1,9 @@
-package Programmers.Lv2;
+package Programmers.HighScoreKit.Heap;
 
 import java.util.*;
 
 //더 맵게
-//힙(Heap)
-//틀린 코드
-class Ex01 {
+class Ex01_wrong {
     public int solution(int[] scoville, int K) {
         int answer = 0;
         Arrays.sort(scoville);

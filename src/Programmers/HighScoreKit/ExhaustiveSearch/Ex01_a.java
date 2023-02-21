@@ -13,7 +13,7 @@ class Ex01_a {
         int answer = 0;
         int maxV=0, maxH=0;
         for(int i=0; i<sizes.length; i++) {
-            int[] size = sizes[i];
+            int[] size = sizes[i]; //익히기!
             //각각 가로 세로 비교
             int max=Math.max(size[0],size[1]);
             int min=Math.min(size[0],size[1]);

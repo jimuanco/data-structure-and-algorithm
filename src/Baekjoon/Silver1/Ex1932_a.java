@@ -7,6 +7,7 @@ import java.util.StringTokenizer;
 
 //정수 삼각형
 //재귀함수 사용
+//Programmers.DP.Ex02(정수 삼각형)과 똑같은 문제
 public class Ex1932_a {
     static int[][] arr;
     // DP를 쓸 때 Integer라는 객체를 통해 객체배열로 활용
@@ -40,7 +41,7 @@ public class Ex1932_a {
             }
         }
         for(int i=0; i<n; i++) {
-            dp[n-1][i]=arr[n-1][i];
+            dp[n-1][i]=arr[n-1][i]; //마지막 행 배열 값 dp에 채우기
         }
         System.out.println(recur(0,0));
     }

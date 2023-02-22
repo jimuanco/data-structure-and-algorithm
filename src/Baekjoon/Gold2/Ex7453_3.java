@@ -9,8 +9,8 @@ import java.util.StringTokenizer;
 //합이 0인 네 정수
 //투 포인터로 풀기 -> 이 풀이가 이분탐색으로 푼것보다 훨씬 빠름
 //Baekjoon Ex1208(부분수열의 합2)와 같이 중간에서 만나기(Meet in the Middle, MITM) 사용
-//2의 코드도 정답은 맞으나 3으로 풀기 -> Baekjoon Ex1208(부분수열의 합2) 참고
-public class Ex7453_2_a {
+//2의 코드도 정답은 맞으나 이렇게 풀기 -> Baekjoon Ex1208(부분수열의 합2) 참고
+public class Ex7453_3 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n=Integer.parseInt(br.readLine());
@@ -45,17 +45,18 @@ public class Ex7453_2_a {
             } else if(arr1[lt]+arr2[rt]>0) {
                 rt--;
             } else {
-                long leftCount=1, rightCount=1; //자료형 long
-                while(lt+1<n*n && arr1[lt]==arr1[lt+1]) {
+                long leftCount=0, rightCount=0; //자료형 long
+                int a=arr1[lt];
+                while(lt<n*n && arr1[lt]==a) {
                     leftCount++;
                     lt++;
                 }
-                while(rt>0 && arr2[rt]==arr2[rt-1]) {
+                int b=arr2[rt];
+                while(rt>=0 && arr2[rt]==b) {
                     rightCount++;
                     rt--;
                 }
                 answer+=leftCount*rightCount;
-                lt++;
             }
         }
         System.out.println(answer);

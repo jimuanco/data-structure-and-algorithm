@@ -65,3 +65,8 @@ public class Ex7453_a {
         System.out.println(answer);
     }
 }
+
+//정렬
+//이분 탐색
+//두 포인터
+//중간에서 만나기

@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 //합이 같은 부분집합(DFS : 아마존 인터뷰)
+//Baekjoon Ex1182(부분수열의 합)과 비슷한 유형
 public class Ex01_a {
     static String answer="NO";
     static int n, total=0;

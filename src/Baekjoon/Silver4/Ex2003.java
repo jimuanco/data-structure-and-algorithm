@@ -29,3 +29,6 @@ public class Ex2003 {
         System.out.println(answer);
     }
 }
+
+//브루트포스 알고리즘
+//두 포인터

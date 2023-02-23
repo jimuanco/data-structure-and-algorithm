@@ -10,6 +10,7 @@ import java.util.StringTokenizer;
 //부분수열의 합2
 
 //Baekjoon Ex7453(합이 0인 네 정수)와 같이 중간에서 만나기(Meet in the Middle, MITM) 사용
+//Baekjoon Ex1450(냅색문제)와 비교
 //자료형 주의(쓸데없이 long 남발시 메모리 많이 잡아먹음 따라서 필요한 곳에만!)
 //wrong2가 왜 틀렸는지 모르겠음
 //코드 차이점은 부분수열합의 배열 두개(arr3,arr4)의 원소 각각을 더한 값이 S랑 같을때 처리에서 차이남(이 코드는 lt++, rt--를 둘 다 해줌, wrong2는 lt++만)

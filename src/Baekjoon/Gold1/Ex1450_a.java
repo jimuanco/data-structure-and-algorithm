@@ -8,21 +8,38 @@ import java.util.Collections;
 import java.util.StringTokenizer;
 
 //냅색문제
-public class Ex1450_incomplete {
+//N은 30이라 반으로 나눠서 따진다
+//Baekjoon Ex1208(부분수열의 합2)와 비교
+//여기선 C보다 무게가 작으면 담을 수 있기때문에 while문을 Ex1208처럼 쓸 순 없다
+//for문 + upperBond 사용
+//answer를 long으로 안해도 됨
+public class Ex1450_a {
     static int[] arr;
     static int c;
-    static long answer=0;
+    static int answer=0;
     static ArrayList<Integer> arr2,arr3;
     static void getSumSubSeq(int idx, int end, int sum, ArrayList<Integer> arrList, int cnt) {
+        if(sum>c) { //이거 없으면 틀렸다고 뜸..(시간 초과로 떠야하는거 아닌가?)
+            return;
+        }
         if(idx==end) {
             if(sum<=c) {
                 arrList.add(sum);
-//                answer+=1;
             }
         } else {
             getSumSubSeq(idx+1,end,sum+arr[idx],arrList,cnt+1);
             getSumSubSeq(idx+1,end,sum,arrList,cnt);
         }
+    }
+
+    static int upperBond(ArrayList<Integer> arr, int target) {
+        int lt=0, rt=arr.size()-1;
+        while(lt<=rt) {
+            int mid=(lt+rt)/2;
+            if(arr.get(mid)>target) rt=mid-1;
+            else lt=mid+1;
+        }
+        return rt;
     }
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -39,28 +56,10 @@ public class Ex1450_incomplete {
         getSumSubSeq(0,n/2,0,arr2,0);
         getSumSubSeq(n/2,n,0,arr3,0);
         Collections.sort(arr2);
-        Collections.sort(arr3);
-        int lt=0;
-        int rt=arr3.size()-1;
-        long cnt1=0,cnt2=0;
-        while(lt<arr2.size() && rt>=0) {
-            int sum=arr2.get(lt)+arr3.get(rt);
-            if(sum<=c) {
-                int a=arr2.get(lt);
-                while(lt<arr2.size() && arr2.get(lt)==a) {
-                    cnt1++;
-                    lt++;
-                }
-                int b=arr3.get(rt);
-                while(rt>=0 && arr3.get(rt)==b) {
-                    cnt2++;
-                    rt--;
-                }
-            } else {
-                rt--;
-            }
+        for(int i=0; i<arr3.size(); i++) {
+            int upper=upperBond(arr2,c-arr3.get(i));
+            answer+=upper+1;
         }
-        answer+=cnt1*cnt2;
         System.out.println(answer);
     }
 }

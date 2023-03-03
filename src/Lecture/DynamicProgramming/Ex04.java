@@ -8,6 +8,7 @@ import java.util.Collections;
 import java.util.StringTokenizer;
 
 //가장 높은 탑 쌓기(LIS 응용)
+//Baekjoon Ex2655(가장높은탑쌓기)가 더 어려움
 class Brick implements Comparable<Brick> {
     public int s,h,w;
     Brick(int s, int h, int w) {

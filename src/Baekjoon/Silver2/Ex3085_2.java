@@ -13,6 +13,7 @@ Y Y
 의 경우 만약 색이 다른 인접한 두 칸을 교환 후 따진다면 1이 나와야 함
 하지만 이 코드는 2가 나오는데 정답
  */
+//N이 3부터라 괜찮음
 public class Ex3085_2 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

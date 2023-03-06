@@ -1,11 +1,11 @@
-package Programmers.Lv4;
+package Programmers.HighScoreKit.BinarySearch;
 
 import java.util.*;
 
 //징검다리
 
 //시간 초과됨
-class Solution {
+class Ex02_timeLimitExceeded {
     static int[] combi;
     static int ans=0;
     static int count(int[] combi, long gap, int distance) {

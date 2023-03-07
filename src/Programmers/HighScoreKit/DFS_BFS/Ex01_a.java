@@ -7,11 +7,11 @@ numbers	target	return
 [4, 1, 2, 1]	4	2
  */
 class Ex01_a {
-    static int sum=0, ans=0;
+    static int sum=0, answer=0;
     static void DFS(int L, int[] numbers, int target, int sum) {
         if(L==numbers.length) {
             if(sum==target) {
-                ans++;
+                answer++;
             }
         } else {
             DFS(L+1,numbers,target,sum+numbers[L]);
@@ -21,9 +21,7 @@ class Ex01_a {
     public static void main(String[] args) {
         int[] numbers={1,1,1,1,1};
         int target=3;
-        int answer = 0;
         DFS(0,numbers,target,sum);
-        answer=ans;
-        System.out.println(answer);;
+        System.out.println(answer);
     }
 }

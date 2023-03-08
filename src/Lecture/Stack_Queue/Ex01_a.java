@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Stack;
 
 //올바른 괄호
+//Programmers.HighScoreKit.Stack_Queue.Ex03(올바른 괄호)와 똑같은 문제
 public class Ex01_a {
     public String solution(String str) {
         String answer = "YES";

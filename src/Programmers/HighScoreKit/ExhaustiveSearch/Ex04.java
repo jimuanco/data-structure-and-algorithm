@@ -7,7 +7,7 @@ brown	yellow	return
 8	1	[3, 3]
 24	24	[8, 6]
  */
-class Solution {
+class Ex04 {
     public static void main(String[] args) {
         int brown=10;
         int yellow=2;

@@ -8,6 +8,7 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 //응급실
+//Programmers.HighScoreKit.Stack_Queue.Ex04(프린터)와 똑같은 문제
 class Person {
     int id;
     int priority;

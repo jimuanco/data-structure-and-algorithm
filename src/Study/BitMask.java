@@ -35,7 +35,7 @@ class BitMask{
     }
     static boolean check(int i) {
         for (int j : answer) {
-            // i & j == j의 의미는 i가 j의 부분집합인지에 대한 여부를 묻는 것.
+            // i & j == j의 의미는 j가 i의 부분집합인지에 대한 여부를 묻는 것.
             if ((i & j) == j) return false;
         }
         return true;

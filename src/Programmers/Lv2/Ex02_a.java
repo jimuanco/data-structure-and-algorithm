@@ -11,16 +11,19 @@ import java.util.*;
 class Ex02_a {
 
     //비트를 담는 list
-    List<Integer> answer = new ArrayList<>();
+    static List<Integer> answer = new ArrayList<>();
 
-    boolean check(int i) {
+    static boolean check(int i) {
         for(int j : answer) {
             // i & j == j의 의미는 j가 i의 부분집합인지에 대한 여부를 묻는 것.
             if((i & j) == j) return false;
         }
         return true;
     }
-    public int solution(String[][] relation) {
+    public static void main(String[] args) {
+        String[][] relation = {{"100","ryan","music","2"},{"200","apeach","math","2"}
+                ,{"300","tube","computer","3"},{"400","con","computer","4"}
+                ,{"500","muzi","music","3"},{"600","apeach","music","2"}};
         int n = relation.length;
         int m = relation[0].length;
 
@@ -43,6 +46,6 @@ class Ex02_a {
                 answer.add(i);
             }
         }
-        return answer.size();
+        System.out.println(answer.size());
     }
 }

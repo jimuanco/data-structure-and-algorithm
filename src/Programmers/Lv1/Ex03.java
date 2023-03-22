@@ -10,7 +10,9 @@ survey	choices	result
 import java.util.*;
 
 class Ex03 {
-    public String solution(String[] survey, int[] choices) {
+    public static void main(String[] args) {
+        String[] survey = {"AN", "CF", "MJ", "RT", "NA"};
+        int[] choices = {5, 3, 2, 7, 5};
         String answer = "";
         HashMap<Character, Integer> map = new HashMap<>();
         map.put('R',0);
@@ -45,6 +47,6 @@ class Ex03 {
         answer += map.get('C') >= map.get('F') ? 'C' : 'F';
         answer += map.get('J') >= map.get('M') ? 'J' : 'M';
         answer += map.get('A') >= map.get('N') ? 'A' : 'N';
-        return answer;
+        System.out.println(answer);
     }
 }

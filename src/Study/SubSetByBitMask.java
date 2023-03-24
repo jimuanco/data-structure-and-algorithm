@@ -1,5 +1,6 @@
 package Study;
 
+//비트마스킹으로 부분집합 구하기
 public class SubSetByBitMask {
     public static void main(String[] args) {
         int[] arr = {1,2,3};

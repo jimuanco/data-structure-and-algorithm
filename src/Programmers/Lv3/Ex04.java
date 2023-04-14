@@ -1,7 +1,7 @@
 package Programmers.Lv3;
 
 //2020 카카오 인턴십
-//보석 쇼핑
+//보석 쇼핑(Lv3)
 /*
 gems	result
 ["DIA", "RUBY", "RUBY", "DIA", "DIA", "EMERALD", "SAPPHIRE", "DIA"]	[3, 7]

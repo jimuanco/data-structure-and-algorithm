@@ -53,17 +53,24 @@ class Ex05 {
             }
         }
 
+//        for(String key : map.keySet()) {
+//            System.out.println(key+" "+map.get(key));
+//        }
+
         for(int n : course) {
             //최소 2명 이상의 손님으로부터 주문된 단품메뉴 조합
             int max = 2;
             for(String key : map.keySet()) {
                 if(key.length() == n && map.get(key)>max) {
+                    //요리 n개로 구성된 코스요리 중 주문 횟수의 max 값
                     max=map.get(key);
                 }
             }
             for(String key : map.keySet()) {
                 //만약 가장 많이 함께 주문된 메뉴 구성이 여러 개라면, 모두 배열에 담음
                 if(key.length() == n && map.get(key) == max) {
+//                    System.out.println(key);
+                    //오름차순
                     set.add(key);
                 }
             }

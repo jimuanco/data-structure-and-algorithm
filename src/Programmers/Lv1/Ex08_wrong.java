@@ -9,7 +9,7 @@ package Programmers.Lv1;
 
 import java.util.*;
 
-class Solution {
+class Ex08_wrong {
     public String solution(String[] cards1, String[] cards2, String[] goal) {
         String answer = "Yes";
         HashMap<String, Integer> map = new HashMap<>();

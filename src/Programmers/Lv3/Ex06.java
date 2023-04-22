@@ -7,6 +7,8 @@ stones	k	result
 [2, 4, 5, 3, 2, 1, 4, 2, 5, 1]	3	3
  */
 
+import java.util.Arrays;
+
 class Ex06 {
 
     static boolean check(int mid, int[] stones, int k) {
@@ -21,6 +23,7 @@ class Ex06 {
                     }
                     if(cnt == k) return false;
                     i++;
+
                 }
             }
         }
@@ -31,10 +34,11 @@ class Ex06 {
         int[] stones = {2, 4, 5, 3, 2, 1, 4, 2, 5, 1};
         int k = 3;
         int answer = 0;
-        int max = 0;
-        for(int i=0; i<stones.length; i++) {
-            max = Math.max(max, stones[i]);
-        }
+//        int max = 0;
+//        for(int i=0; i<stones.length; i++) {
+//            max = Math.max(max, stones[i]);
+//        }
+        int max= Arrays.stream(stones).max().getAsInt();
         int min = 1;
         while(min <= max) {
             int mid = (min+max)/2;

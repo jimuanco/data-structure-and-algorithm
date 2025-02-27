@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-//경로탐색(인접리스트, ArrayList)
+//경로탐색(인접리스트, ArrayList) -> 정점 갯수가 많을 시 인접행렬보다 인접리스트
 public class Ex13 {
     static int n, m, answer=0;
     static ArrayList<ArrayList<Integer>> graph;

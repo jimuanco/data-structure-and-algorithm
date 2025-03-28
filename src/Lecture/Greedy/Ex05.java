@@ -47,7 +47,7 @@ public class Ex05 {
         pQ.offer(new Edge(1,0));
         dis[1]=0;
         while(!pQ.isEmpty()) {
-            Edge tmp=pQ.poll(); //logN, cost 젤 작은 값 poll()
+            Edge tmp=pQ.poll(); //logN(이진트리), cost 젤 작은 값 poll()
             int now=tmp.vex;
             int nowCost=tmp.cost;
             if(nowCost>dis[now]) continue;

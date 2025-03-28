@@ -23,7 +23,7 @@ public class Ex05_a {
         arr = new Integer[n];
         StringTokenizer st = new StringTokenizer(br.readLine());
         for (int i = 0; i < n; i++) {
-            arr[i] = Integer.parseInt(st.nextToken());
+            arr[i] = Integer.valueOf(st.nextToken());
         }
         Arrays.sort(arr, Collections.reverseOrder()); //이거 안해주면 Time Limit Exceeded, int 말고 객체형 Integer 사용
         m = Integer.parseInt(br.readLine());

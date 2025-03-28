@@ -9,6 +9,7 @@ class Ex05 {
     int answer = 0;
     int[] visited;
     void DFS(int L, int k, int[][] dungeons) {
+        if (L > dungeons.length) return;
         for(int i=0; i<dungeons.length; i++) {
             if(visited[i] == 0 && k >= dungeons[i][0]) {
                 visited[i] = 1;
